@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 9bc7025496e478f439b9cd43eba989a4
+          GIST_ID: e435f6f48dc81b7344df09dbd553ba63
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
     steps:
@@ -32,6 +32,3 @@ jobs:
     - name: Update-gist
       run:  go run ./cmd/main.go
 
-
-   
- 
